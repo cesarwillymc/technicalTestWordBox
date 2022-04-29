@@ -27,16 +27,8 @@ const val FOUR = 4
 const val FIVE = 5
 const val ONE_FLOAT = 1F
 
-// Google
-const val ZOOM_NORMAL = 14f
-const val ZOOM_MIN = 12f
-const val ZOOM_MAX = 20f
-const val TAG_BTN_LOCATION_MAPS = "GoogleMapMyLocationButton"
-const val DEFAULT_MAX_RADIUS = 10000
-const val DEFAULT_RADIUS = 2
-const val KILOMETERS = 1000
-const val REPEAT_1000 = 1000
 
+const val DEFAULT_RANDOM_PEOPLE = 50
 // iMAGE
 const val ANGLE180 = 180.0
 const val LIMIT_OFFSET_NEGATIVE = -500
@@ -55,9 +47,6 @@ const val FORMAT_INT = "%d"
 // DB Room
 const val LIMIT_DATA_FOR_TABLE = 20
 const val ERROR_DB = "Error no found data"
-
-// Google place
-const val TYPE_DEFAULT_PLACE = "restaurant|pharmacy|bar|food"
 
 const val SIZE_400 = 400
 const val SIZE_200 = 200
