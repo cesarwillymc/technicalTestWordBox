@@ -4,5 +4,5 @@ import com.cesarwillymc.technicaltestwordbox.ui.route.action.HomeAction.Companio
 
 sealed class HomeRoute(path: String) : Route(path) {
     object Home : HomeRoute("home")
-    object Detail : HomeRoute("home/{$MODEL_PEOPLE_ARGS}")
+    object Detail : HomeRoute("detail/$MODEL_PEOPLE_ARGS={$MODEL_PEOPLE_ARGS}")
 }

@@ -3,6 +3,7 @@ package com.cesarwillymc.technicaltestwordbox.data.source.randomPeople.mapper
 import com.cesarwillymc.technicaltestwordbox.data.source.randomPeople.entities.PeopleRandomResponse
 import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Person
 import com.cesarwillymc.technicaltestwordbox.extension.FORMAT_TWO_STRING
+import com.cesarwillymc.technicaltestwordbox.extension.removeUrl
 import javax.inject.Inject
 
 /**
@@ -17,8 +18,8 @@ class PeopleDataMapperImpl @Inject constructor() :
         return info.results.map {
             Person(
                 name = FORMAT_TWO_STRING.format(it.name.first, it.name.last),
-                id = it.id.value,
-                photo = it.picture.thumbnail,
+                id = it.id?.value?:it.id?.name.orEmpty(),
+                photo = it.picture.thumbnail.removeUrl(),
                 email = it.email,
                 gender = it.gender,
                 age = it.dob.age,

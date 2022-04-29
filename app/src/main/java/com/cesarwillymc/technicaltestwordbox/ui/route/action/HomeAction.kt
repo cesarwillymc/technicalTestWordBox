@@ -16,14 +16,15 @@ class HomeAction(navController: NavHostController) {
     }
 
     val navigateToDetail: (Person) -> Unit = { model ->
+        val modelArgs =  toJson(model)
         val routeReplace = HomeRoute.Detail.path.replace(
             "{$MODEL_PEOPLE_ARGS}",
-            toJson(model)
+            modelArgs
         )
         navController.navigate(routeReplace)
     }
 
     companion object {
-        const val MODEL_PEOPLE_ARGS = "argument"
+        const val MODEL_PEOPLE_ARGS = "peopleArg"
     }
 }

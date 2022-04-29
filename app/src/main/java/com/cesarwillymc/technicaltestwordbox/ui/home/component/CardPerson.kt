@@ -21,6 +21,7 @@ import androidx.constraintlayout.compose.Dimension
 import coil.compose.rememberImagePainter
 import com.cesarwillymc.technicaltestwordbox.R
 import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Person
+import com.cesarwillymc.technicaltestwordbox.extension.setUrl
 import com.cesarwillymc.technicaltestwordbox.ui.theme.DangerRed
 import com.cesarwillymc.technicaltestwordbox.ui.theme.Gray
 import com.cesarwillymc.technicaltestwordbox.ui.theme.ImageMini
@@ -59,7 +60,7 @@ fun CardPersonItem(
         ) {
             val (icon, column, favorite) = createRefs()
             Image(
-                painter = rememberImagePainter(person.photo),
+                painter = rememberImagePainter(person.photo.setUrl()),
                 contentDescription = null,
                 modifier = Modifier
                     .constrainAs(icon) {

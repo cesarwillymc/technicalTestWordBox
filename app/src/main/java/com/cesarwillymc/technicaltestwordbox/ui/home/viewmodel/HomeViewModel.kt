@@ -1,8 +1,10 @@
 package com.cesarwillymc.technicaltestwordbox.ui.home.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.GetPeopleRandomUseCase
 import com.cesarwillymc.technicaltestwordbox.extension.getData
+import com.cesarwillymc.technicaltestwordbox.extension.getError
 import com.cesarwillymc.technicaltestwordbox.extension.isError
 import com.cesarwillymc.technicaltestwordbox.extension.isSuccess
 import com.cesarwillymc.technicaltestwordbox.ui.home.entities.PeopleUiState
@@ -36,7 +38,8 @@ class HomeViewModel @Inject constructor(
             getPeopleRandomUseCase(Unit).let { result ->
                 when {
                     result.isError -> {
-
+                        _peopleUiState.update { PeopleUiState(isError = true) }
+                        Log.e("onLoadPeople", " error  ${result.getError()}")
                     }
                     result.isSuccess -> {
                         _peopleUiState.update {

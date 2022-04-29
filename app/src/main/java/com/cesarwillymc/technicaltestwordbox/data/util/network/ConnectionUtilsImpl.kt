@@ -5,7 +5,6 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.cesarwillymc.technicaltestwordbox.data.util.network.ConnectionUtils
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 

@@ -55,3 +55,5 @@ const val SIZE_60 = 60
 
 @SuppressWarnings("MaxLineLength")
 const val DEFAULT_IMG = "https://www.creativefabrica.com/wp-content/uploads/2020/03/09/Simple-Fork-Plate-Icon-Restaurant-Logo-Graphics-3446203-1-1-580x348.jpg"
+
+const val URL_IMAGE = "https://randomuser.me/api/"

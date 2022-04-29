@@ -3,4 +3,9 @@
     <string name="lbl_without_internet">Sin conexión a internet</string>
     <string name="lbl_home">Inicio</string>
     <string name="lbl_personal_information">Información Personal</string>
+    <string name="til_country">Ciudad</string>
+    <string name="til_age">Edad</string>
+    <string name="til_gender">Genero</string>
+    <string name="til_email">Correo</string>
+    <string name="til_fullname">Nombres y Apellidos</string>
 </resources>
