@@ -21,7 +21,7 @@ private val LightColorPalette = lightColors(
  * For now always Light Theme
  */
 @Composable
-fun GreenCrossTheme(content: @Composable() () -> Unit) {
+fun GreenCrossTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colors = LightColorPalette,
         typography = Typography,

@@ -6,7 +6,7 @@ package com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities
  *
  * Lima, Peru.
  */
-data class People(
+data class Person(
     val name: String,
     val id: String,
     val photo: String,

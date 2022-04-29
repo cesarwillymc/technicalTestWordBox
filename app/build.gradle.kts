@@ -86,6 +86,12 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
     implementation("androidx.compose.runtime:runtime-livedata:1.2.0-alpha05")
 
+    // -- Accompanist
+    implementation("com.google.accompanist:accompanist-insets:0.20.2")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.20.2")
+
+    //Lotie
+    implementation("com.airbnb.android:lottie-compose:4.2.0")
 
     // -- Test
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

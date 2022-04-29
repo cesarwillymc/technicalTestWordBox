@@ -16,7 +16,7 @@ import javax.inject.Inject
 class PeopleRemoteDataSourceImpl @Inject constructor(
     private val service: PeopleService
 ) : PeopleRemoteDataSource, BaseRemoteDataSource() {
-    override suspend fun getRandomPeople(lat: Double, long: Double): Result<PeopleRandomResponse> {
+    override suspend fun getRandomPeople(): Result<PeopleRandomResponse> {
         return getResult { service.getRandomPeople() }
     }
 

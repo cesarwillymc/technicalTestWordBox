@@ -23,6 +23,8 @@ val NotificationOrangeLight = Color(0xFFF89C13)
 val GreenStrokeTurquoise = Color(0xFF9FD8B6)
 val PriceDarkOrange = Color(0xFFFC8A05)
 
+val DangerRed = Color(0xFFFF2525)
+
 // Neutral
 val RichBlack = Color(0xFF141C23)
 val OnyxBlack = Color(0xFF363C42)

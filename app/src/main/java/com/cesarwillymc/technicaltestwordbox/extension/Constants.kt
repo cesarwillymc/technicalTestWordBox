@@ -29,6 +29,7 @@ const val ONE_FLOAT = 1F
 
 
 const val DEFAULT_RANDOM_PEOPLE = 50
+const val REPEAT_1000 = 1000
 // iMAGE
 const val ANGLE180 = 180.0
 const val LIMIT_OFFSET_NEGATIVE = -500

@@ -1,6 +1,6 @@
 package com.cesarwillymc.technicaltestwordbox.data.source.randomPeople
 
-import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.People
+import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Person
 import com.cesarwillymc.technicaltestwordbox.extension.Result
 
 /**
@@ -10,5 +10,5 @@ import com.cesarwillymc.technicaltestwordbox.extension.Result
  * Lima, Peru.
  */
 interface PeopleDataSource {
-    suspend fun getRandomPeople(): Result<List<People>>
+    suspend fun getRandomPeople(): Result<List<Person>>
 }

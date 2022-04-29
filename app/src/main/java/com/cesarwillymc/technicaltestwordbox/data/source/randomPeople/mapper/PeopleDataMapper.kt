@@ -1,7 +1,7 @@
 package com.cesarwillymc.technicaltestwordbox.data.source.randomPeople.mapper
 
 import com.cesarwillymc.technicaltestwordbox.data.source.randomPeople.entities.PeopleRandomResponse
-import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.People
+import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Person
 
 /**
  * Created by cesarwillymamanicanaza on 11/03/22.
@@ -10,5 +10,5 @@ import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Peop
  * Lima, Peru.
  */
 interface PeopleDataMapper {
-    fun responseToDomain(info: PeopleRandomResponse): List<People>
+    fun responseToDomain(info: PeopleRandomResponse): List<Person>
 }

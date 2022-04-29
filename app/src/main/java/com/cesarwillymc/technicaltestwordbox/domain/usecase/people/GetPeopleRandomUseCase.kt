@@ -4,7 +4,7 @@ import com.cesarwillymc.technicaltestwordbox.extension.Result
 import com.cesarwillymc.technicaltestwordbox.data.source.randomPeople.PeopleDataSource
 import com.cesarwillymc.technicaltestwordbox.data.util.coroutine.IoDispatcher
 import com.cesarwillymc.technicaltestwordbox.domain.base.SuspendUseCase
-import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.People
+import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Person
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 
@@ -17,10 +17,10 @@ import javax.inject.Inject
 class GetPeopleRandomUseCase @Inject constructor(
     private val repository: PeopleDataSource,
     @IoDispatcher dispatcher: CoroutineDispatcher,
-) : SuspendUseCase<Unit, List<People>>(
+) : SuspendUseCase<Unit, List<Person>>(
     coroutineDispatcher = dispatcher
 ) {
-    override suspend fun execute(parameters: Unit): Result<List<People>> {
+    override suspend fun execute(parameters: Unit): Result<List<Person>> {
         return repository.getRandomPeople()
     }
 }
