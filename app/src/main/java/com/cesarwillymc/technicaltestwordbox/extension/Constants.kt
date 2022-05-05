@@ -19,6 +19,7 @@ const val EMPTY_STRING = ""
 // Numbers
 const val ZEROF = 0f
 const val ZERO = 0
+const val ONE = 1
 const val TWO = 2
 const val ONE_FLOAT = 1F
 

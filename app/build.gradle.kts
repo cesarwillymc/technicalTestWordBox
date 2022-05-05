@@ -100,4 +100,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     testImplementation("io.mockk:mockk:1.12.0")
     debugImplementation("androidx.compose.ui:ui-tooling:1.1.1")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 }

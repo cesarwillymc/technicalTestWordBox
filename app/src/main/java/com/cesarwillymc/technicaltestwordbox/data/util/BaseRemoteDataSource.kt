@@ -26,7 +26,6 @@ abstract class BaseRemoteDataSource : ErrorHandler {
     ): Result<Out> = try {
         Result.Success(call())
     } catch (e: Exception) {
-        Log.e("error", "$e")
         Result.Error(exception = getError(e).toDomain())
     }
 
