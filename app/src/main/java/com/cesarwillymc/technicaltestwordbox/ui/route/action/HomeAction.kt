@@ -11,10 +11,6 @@ class HomeAction(navController: NavHostController) {
         navController.navigateUp()
     }
 
-    val navigateToHome: () -> Unit = {
-        navController.navigate(HomeRoute.Home.path)
-    }
-
     val navigateToDetail: (Person) -> Unit = { model ->
         val modelArgs =  toJson(model)
         val routeReplace = HomeRoute.Detail.path.replace(

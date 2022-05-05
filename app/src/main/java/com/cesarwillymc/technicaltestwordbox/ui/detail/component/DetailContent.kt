@@ -1,12 +1,8 @@
 package com.cesarwillymc.technicaltestwordbox.ui.detail.component
 
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
@@ -16,10 +12,7 @@ import com.cesarwillymc.technicaltestwordbox.domain.usecase.people.entities.Pers
 import com.cesarwillymc.technicaltestwordbox.extension.setUrl
 import com.cesarwillymc.technicaltestwordbox.ui.base.GreenCrossSimpleScaffold
 import com.cesarwillymc.technicaltestwordbox.ui.theme.ImageLarge
-import com.cesarwillymc.technicaltestwordbox.ui.theme.Normal100
-import com.cesarwillymc.technicaltestwordbox.ui.theme.OnyxBlack
 import com.cesarwillymc.technicaltestwordbox.ui.theme.Small100
-import com.cesarwillymc.technicaltestwordbox.ui.theme.TextLarge
 
 /**
  * Created by cesarwillymamanicanaza on 28/04/22.

@@ -1,7 +1,5 @@
 package com.cesarwillymc.technicaltestwordbox.extension
 
-import androidx.compose.runtime.snapshots.SnapshotApplyResult
-
 import com.cesarwillymc.technicaltestwordbox.data.util.network.ErrorSource
 import com.cesarwillymc.technicaltestwordbox.domain.base.entities.Failure
 
